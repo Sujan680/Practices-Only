@@ -10,6 +10,9 @@
 </head>
 
 <style>
+    html {
+        scroll-behavior: smooth;
+    }
     table, tr, th, td {
         border: 1px solid black;
         border-collapse: collapse;
@@ -52,9 +55,9 @@
         </h1>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#home">Contact</a></li>
-            <li><a href="#home">About</a></li>
-            <li><a href="#home">Login</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#login">Login</a></li>
         </ul>
     </header>
 
@@ -206,6 +209,72 @@
         I'm creating a link to
         <a href="htttps://www.mozilla.org/en-US/">the Mozilla homepage</a>
     </p>
+
+    <h4>Formatting tags</h4>
+    <p title="sujan magar">i am sujan <strong>Magar</strong> from the <i>Mt. Everest</i></p>
+
+    <p>C<sub>6</sub>O <sub>8</sub>H</p>
+
+    <p>H <sup>++</sup></p>
+
+    <p>I am <del>deleted</del> from the file.</p>
+
+    
+
+    <div id="home">
+        <h2>This is home page</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eligendi possimus non magni voluptatum voluptatibus officiis, deserunt, numquam velit delectus et explicabo commodi laboriosam voluptate hic facilis, sequi vitae pariatur quasi a. Ipsa mollitia labore officia! Adipisci libero animi nihil nemo delectus, harum error placeat dicta. In veritatis a ex!</p>
+
+        <a href="" title="this is link" target="_blank" download="download"
+        style="background-color: white;">this is Home</a>
+    </div>
+    <div id="contact">
+        <h3>This is home contact page</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eligendi possimus non magni voluptatum voluptatibus officiis, deserunt, numquam velit delectus et explicabo commodi laboriosam voluptate hic facilis, sequi vitae pariatur quasi a. Ipsa mollitia labore officia! Adipisci libero animi nihil nemo delectus, harum error placeat dicta. In veritatis a ex!</p>
+
+        <a href="tel: 9806786004">call me</a>
+    </div>
+    <div id="about">
+        <h4>This is about page</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eligendi possimus non magni voluptatum voluptatibus officiis, deserunt, numquam velit delectus et explicabo commodi laboriosam voluptate hic facilis, sequi vitae pariatur quasi a. Ipsa mollitia labore officia! Adipisci libero animi nihil nemo delectus, harum error placeat dicta. In veritatis a ex!</p>
+    </div>
+    <div id="login">
+        <h5>This is &hearts; login page</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eligendi possimus non magni voluptatum voluptatibus officiis, deserunt, numquam velit delectus et explicabo commodi laboriosam voluptate hic facilis, sequi vitae pariatur quasi a. Ipsa mollitia labore officia! Adipisci libero animi nihil nemo delectus, harum error placeat dicta. In veritatis a ex!</p>
+
+        <a href="mailto:sujan@.com">send mail</a>
+    </div>
+
+    <h2>Html entities</h2>
+    <p>&gt Greater than</p>
+    <p>&copy; copyright 2024</p>
+
+    <img src="https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&w=400" alt="my banner" style="width: 50%; height: auto;">
+
+    <h4>My coding knowledge</h4>
+    <div class="about-progress">
+        <label for="html">Html code:</label>
+        <progress id="html" max="100" value="100">
+            100% HTML
+        </progress>
+    </div>
+    <div class="about-progress">
+        <label for="css">CSS code:</label>
+        <progress id="html" max="100" value="80">
+            50% CSS
+        </progress>
+    </div>
+    <div class="about-progress">
+        <label for="html">Javascript code:</label>
+        <progress id="html" max="100" value="90">
+            Javascript
+        </progress>
+    </div>
+
+    <h5>Iframes examples</h5>
+    <iframe src="https://www.wikipedia.org/" frameborder="0" width="100%"></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224976.98467519842!2d83.7918074927415!3d28.22962361481451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995937bbf0376ff%3A0xf6cf823b25802164!2sPokhara!5e0!3m2!1sen!2snp!4v1718440651815!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </body>
    
 </html>

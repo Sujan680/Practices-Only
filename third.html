@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+      .blog-container h2 {
+        font-size: 40px;
+        text-align: center;
+        color: blue;
+        margin: 50px 0px;
+      }
+      .blog-cards {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 15px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
+      }
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .blog-content {
+        padding: 15px;
+      }
+      .blog-content h3 {
+        font-weight: 600;
+       
+      }
+      .blog-content p{
+        color: rgb(123, 187, 67);
+        padding: 10px 0px;
+        margin-bottom: 10px;
+      }
+      .blog-content a {
+        text-decoration: none;
+        background-color: blueviolet;
+        padding: 5px;
+        border-radius: 5px;
+        color: #fff;
+      
+      }
+      .blog-content a:hover {
+        background-color: brown;
+      }
+      @media screen and (max-width:768px) {
+        .blog-cards{
+            flex-direction: column;
+        }
+        .card {
+            margin: 20px 0px;
+        }
+        .blog-image img {
+            max-width: 100%;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <h2>Blogs and more...</h2>
+        <div class="blog-cards">
+            <div class="card">
+                <div class="blog-image">
+                    <img src="https://images.pexels.com/photos/8908636/pexels-photo-8908636.jpeg?auto=compress&cs=tinysrgb&w=400" alt="image-1">
+                </div>
+                <div class="blog-content">
+                    <h3>Nimmi</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, quo!</p>
+                    <a href="">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="blog-image">
+                    <img src="https://images.pexels.com/photos/8525634/pexels-photo-8525634.jpeg?auto=compress&cs=tinysrgb&w=400" alt="image-2">
+                </div>
+                <div class="blog-content">
+                    <h3>Nimmi</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, quo!</p>
+                    <a href="">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="blog-image">
+                    <img src="https://images.pexels.com/photos/5738201/pexels-photo-5738201.jpeg?auto=compress&cs=tinysrgb&w=400" alt="image-3">
+                </div>
+                <div class="blog-content">
+                    <h3>Nimmi</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, quo!</p>
+                    
+                    <a href="">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
