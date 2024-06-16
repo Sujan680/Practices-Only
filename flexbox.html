@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        border: 2px solid brown;
+        display: flex;
+        /* flex-direction: column; */
+        height: 90vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */
+        align-content: center; 
+        /* align content should be used when we want the multiple card to be shown 
+        one after another with same amount of space after the line break also */
+    }
+    .item {
+        height: 80px;
+        width: 80px;
+        margin: 4px;
+        background-color: blueviolet;
+       
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+       
+        note: flex-grow, flex-shrink, oreder, align-self are all property of flex items 
+        but not of the container of flex.
+
+    </div>
+</body>
+</html>
