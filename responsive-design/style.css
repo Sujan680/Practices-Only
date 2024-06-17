@@ -1,0 +1,37 @@
+body {
+    background-color: #123456;
+}
+
+/* @media (max-width:400px) {
+    body {
+        background-color: #79be11;
+    }
+}
+
+@media (max-width:200px) {
+    body {
+        background-color: red;
+        
+    }
+} */
+
+/* @media (min-width:400px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+@media (min-width:600px) {
+    body {
+        background-color: red;
+        
+    }
+} */
+
+/* and means both logical AND where both condition must be true */
+@media (min-width:400px) and (max-width:600px) {
+    body {
+        background-color: blue;
+        
+    }
+}
