@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <title>Grid-example</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+                border: 2px solid black;
+                background-color: darkgreen;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: 200px;
+                gap: 10px;
+            }
+
+            .box {
+                background-color: red;
+                /* background-image: url(https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJlfGVufDB8fDB8fHww); */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-repeat: no-repeat;
+                background-position: top;
+                background-attachment: scroll;
+                padding: 20px;
+                text-align: center;
+                background-blend-mode: hard-light;
+                transition: all 1s ease-in-out;
+            }
+
+            .box:hover {
+                background-color: #999;
+                background-position: center;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+
+            .row {
+                grid-row: 2 span;
+            }
+
+            .col {
+                grid-column: 2 span;
+            }
+
+            @media screen and (max-width:1024px) {
+                .container {
+                    width: 100%;
+                    padding-inline: 12px;
+                    grid-auto-rows: 200px;
+                    flex-direction: column;
+                    padding-block: 10px;
+                }
+
+                .box {
+                    width: 100%;
+                    grid-auto-rows: 200px;
+                    grid-row: span 1;
+                    grid-column: span 4;
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .container {
+                    flex-direction: column;
+                    padding-block: 10px;
+                }
+
+                .box {
+                    width: 100%;
+                    grid-auto-rows: 200px;
+                    grid-row: span 2;
+                    grid-column: span 4;
+                }
+            }
+        </style>
+    </head>
+
+<body>
+    <header>
+        <h2 style="text-align: center; background: linear-gradient(red,blue); padding: 10px;">Hello , this is grid for
+            you</h2>
+    </header>
+    <div class="container">
+        <div class="box row" id="box-1"
+            style="background-image: url(https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmlydGhkYXl8ZW58MHx8MHx8fDA%3D);">
+            box-1</div>
+        <div class="box col" id="box-2"
+            style="background-image: url(https://plus.unsplash.com/premium_photo-1663839412099-8fe226462e8c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmlydGhkYXl8ZW58MHx8MHx8fDA%3D);">
+            box-2</div>
+        <div class="box row" id="box-3"
+            style="background-image: url(https://images.unsplash.com/photo-1464349153735-7db50ed83c84?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmlydGhkYXl8ZW58MHx8MHx8fDA%3D);">
+            box-3</div>
+        <div class="box row" id="box-4"
+            style="background-image: url(https://images.unsplash.com/photo-1513546493312-0066d7de3fd2?q=80&w=370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+            box-4</div>
+        <div class="box " id="box-5"
+            style="background-image: url(https://images.unsplash.com/photo-1502035618526-6b2f1f5bca1b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJpcnRoZGF5fGVufDB8fDB8fHww);">
+            box-5</div>
+        <div class="box" id="box-6"
+            style="background-image: url(https://images.unsplash.com/photo-1627580682663-3f9d31ec2156?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJpcnRoZGF5JTIwY2VsZWJyYXRpb24lMjAyM3JkfGVufDB8fDB8fHww);">
+            box-6</div>
+        <div class="box col" id="box-7"
+            style="background-image: url(https://images.unsplash.com/photo-1607836046730-3317bd58a31b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aGltYWxheWF8ZW58MHx8MHx8fDA%3D);">
+            box-7</div>
+        <div class="box col" id="box-8"
+            style="background-image: url(https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJlfGVufDB8fDB8fHww);">
+            box-8</div>
+        <div class="box" id="box-9"
+            style="background-image: url(https://plus.unsplash.com/premium_vector-1718241096459-c0cea372852c?bg=FFFFFF&w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlydGhkYXklMjBjZWxlYnJhdGlvbiUyMDIzcmR8ZW58MHx8MHx8fDA%3D);">
+            box-9</div>
+        <div class="box row" id="box-10"
+            style="background-image: url(https://images.unsplash.com/photo-1716370378359-0810671ef8f3?dpr=1&h=294&w=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8Mjc0ODQ0fHxlbnwwfHx8fHw%3D);">
+            box-10</div>
+        <div class="box" id="box-11"
+            style="background-image: url(https://images.unsplash.com/photo-1592769255412-dbce67b8c064?dpr=1&h=294&w=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTA0MTgxMTV8fGVufDB8fHx8fA%3D%3D);">
+            box-11</div>
+        <div class="box col" id="box-12"
+            style="background-image: url(https://plus.unsplash.com/premium_photo-1691735666273-0c059e1cdcc6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGltYWxheWF8ZW58MHx8MHx8fDA%3D);">
+            box-12</div>
+
+    </div>
+</body>
+
+</html>
